@@ -17,7 +17,7 @@ const Skills = () => {
             skill for proficiency</h3>
 
         <div className='grid grid-cols-3 gap-5 mt-[6rem] md:mt-[1rem] '>
-           <SkillHtml/>
+           <SkillHtml/> 
         </div>
       
     </motion.div>
