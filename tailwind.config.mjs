@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  darkMode: ['class', '[data-theme="dark"]'], // ✅ add this line!
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -8,14 +9,36 @@ export default {
   theme: {
     extend: {
       colors: {
-        // lightBg: '#fcf4ff',
-        // blackBg: '#2a004af',
         darkTheme: '#11001F',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
-    
     },
   },
-  plugins: [require('tailwind-scrollbar'),],
+  plugins: [require('tailwind-scrollbar')],
 };
+
+
+
+
+// /** @type {import('tailwindcss').Config} */
+// export default {
+//   content: [
+//     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+//     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+//   ],
+//   theme: {
+//     extend: {
+//       colors: {
+//         // lightBg: '#fcf4ff',
+//         // blackBg: '#2a004af',
+//         darkTheme: '#11001F',
+//         background: "var(--background)",
+//         foreground: "var(--foreground)",
+//       },
+    
+//     },
+//   },
+//   plugins: [require('tailwind-scrollbar'),],
+// };

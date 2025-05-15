@@ -21,21 +21,21 @@ const BackgroundCircles = () => {
     >
       <div
         className="absolute border border-gray-800 rounded-full 
-        h-[200px] w-[200px] mt-[21rem] animate-ping"
+        h-[200px] w-[200px] mt-[26rem] animate-ping"
       />
       <div
         className="absolute border border-black rounded-full 
-        h-[300px] w-[300px] mt-[21rem] animate-ping"
+        h-[300px] w-[300px] mt-[26rem] animate-ping"
       />
       <div
         className="absolute border border-gray-700 rounded-full 
-        h-[500px] w-[500px] mt-[21rem] animate-ping"
+        h-[500px] w-[500px] mt-[26rem] animate-ping"
       />
-      <div className=" absolute border border-stone-700 rounded-full opacity-20  h-[820px] w-[820px] mt-[21rem]
+      <div className=" absolute border border-stone-700 rounded-full opacity-20  h-[900px] w-[900px] mt-[26rem]
        animate-pulse" />
       <div
         className="absolute border border-gray-800 rounded-full 
-        h-[800px] w-[800px] mt-[21rem] animate-ping"
+        h-[700px] w-[700px] mt-[26rem] animate-ping"
       />
     </motion.div>
   );

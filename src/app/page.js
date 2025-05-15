@@ -3,7 +3,7 @@ import Experince from "@/components/Experince";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import React from "react";
-import Link from 'next/link'
+import Link from "next/link";
 import { FaArrowUp } from "react-icons/fa";
 import Skills from "@/components/Skills";
 import Skill from "@/components/SkillHtml";
@@ -18,11 +18,16 @@ import SkillJs from "@/components/SkillJs";
 import SkillTailwind from "@/components/SkillTailwind";
 import SkillVscode from "@/components/SkillVcode";
 import SkillReact from "@/components/SkillReact";
+import Projects from "@/components/Projects";
+import Contact from "@/components/Contact";
+import TeamSection from "@/components/Team";
+import Footer from "@/components/Footer";
 
 const page = () => {
   return (
     <div
-      className="bg-neutral-900 text-white h-screen snap-y snap-mandatory
+      // commented out h-screen
+      className="dark:bg-black, dark:text-white text-white  snap-y snap-mandatory
     overflow-scroll z-0"
     >
       {/* navbar   */}
@@ -32,7 +37,7 @@ const page = () => {
         <Hero />
       </section>
 
-      <section id="about" className="snap-center py-16 ">
+      <section id="about" className="snap-center py-16 lg:py-0 ">
         <About />
       </section>
 
@@ -42,38 +47,80 @@ const page = () => {
         <Experince />
       </section>
 
+      {/* <section id='skills' className='snap-start  h-screen items-center px-[1rem] flex flex-col pt-32'> */}
+      <section
+        id="skills"
+        className="snap-center py-16 lg:py-0 px-[1rem] items-center flex flex-col h-[80vh] mt-[12rem] lg:mt-0 lg:mb-7"
+      >
+        {/* <h3 className='uppercase tracking-[20px] text-gray-500 text-base md:text-2xl '>Skills</h3> */}
+        <h1 className="bottom-28 uppercase tracking-[20px] text-gray-500 text-4xl text-center mb-[7rem] font-bold">
+          Skills
+        </h1>
 
-     <section id='skills' className='snap-start  h-screen items-center px-[1rem] flex flex-col pt-32 '>
-        <h3 className='uppercase tracking-[20px] text-gray-500 text-base md:text-2xl '>Skills</h3>
-
-        <h3 className=' uppercase tracking-[1px] text-gray-500 text-[12px] md:text-lg '>Hover over a skill for proficiency</h3>
-        <div className='grid grid-cols-3 md:grid-cols-10 pt-5 gap-3 md:gap-5 md:pl-[6rem]'>
-          <SkillCss/>
-          <SkillHtml/>
-          <SkillGit/>
-          <SkillVersel/>
-          <SkillNext/>
-          <SkillMongo/>
-          <SkillJs/>
-          <SkillTailwind/>
-          <SkillVscode/>
-          <SkillReact/>
+        <h3 className=" uppercase tracking-[1px] text-gray-500 text-[12px] md:text-2xl mb-4">
+          Hover over a skill for proficiency
+        </h3>
+        <div className="grid grid-cols-3 md:grid-cols-10 lg:grid-cols-7 pt-5 gap-3 md:gap-5 md:pl-[6rem]">
+          <SkillCss />
+          <SkillHtml />
+          <SkillGit />
+          <SkillVersel />
+          <SkillNext />
+          <SkillMongo />
+          <SkillJs />
+          <SkillTailwind />
+          <SkillVscode />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
+          <SkillReact />
         </div>
-      </section> 
+      </section>
 
+      <section id="project" className="snap-center">
+        <Projects />
+      </section>
+
+      {/* 
+      <section id="team" className="snap-center">
+        <TeamSection />
+      </section> */}
+
+      <section id="contact" className="snap-center">
+        <Contact />{" "}
+      </section>
 
       {/* scroll to the top */}
       <Link href="#hero">
         <div
-          className="w-[10px] rounded-full px-4 py-2 bg-[#a33131] ring-4 hover:ring-blue-600 md:px-6 md:py-4 md:bg-[#3177A3]
-         items-center justify-center md:ring-8 md:hover:ring-neutral-600 flex fixed
+          className="w-[10px] rounded-full px-4 py-2 bg-[#a33131] ring-4 hover:ring-blue-600 md:px-6 md:py-4 md:bg-[#3177A3] 
+         items-center justify-center md:ring-8 md:hover:ring-neutral-600 lg:bg-black dark:lg:bg-white 
+         flex fixed
           right-10 md:right-16 bottom-8 md:bottom-12"
         >
           <span className="font-bold ">
-            <FaArrowUp />
+            <FaArrowUp className="dark:lg:text-black" />
           </span>
         </div>
       </Link>
+
+      {/* footer   */}
+      <Footer />
     </div>
   );
 };
