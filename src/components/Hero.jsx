@@ -37,7 +37,9 @@ const Hero = () => {
       </div>
 
       <div className="z-20">
-        <h2 className="text-sm uppercase text-gray-600 pb-2 font-semibold tracking-[15px]">Software Developer</h2>
+        <h2 className="text-sm uppercase text-gray-600 pb-2 font-semibold tracking-[15px]">
+          Software Developer
+        </h2>
         <h1 className="text-xl lg:2xl font-semibold px-10">
           <span className="my-3 text-black dark:text-white">{text}</span>
           <Cursor cursorColor="red" />
@@ -45,19 +47,19 @@ const Hero = () => {
 
         <div className="pt-5">
           <Link href="#about">
-          <button className="heroButton">About</button>
+            <button className="heroButton">About</button>
           </Link>
           <Link href="#experince">
-          <button className="heroButton">Experince</button>
+            <button className="heroButton">Experince</button>
           </Link>
-          <Link href={'#skills'}>
-          <button className="heroButton">Skills</button>
+          <Link href={"#skills"}>
+            <button className="heroButton">Skills</button>
           </Link>
-          <Link href={'#project'}>
-          <button className="heroButton">Projects</button>
+          <Link href={"#project"}>
+            <button className="heroButton">Projects</button>
           </Link>
-           <Link href={'#contact'}>
-          <button className="heroButton">Contact Me</button>
+          <Link href={"#contact"}>
+            <button className="heroButton">Contact Me</button>
           </Link>
         </div>
       </div>
@@ -66,3 +68,28 @@ const Hero = () => {
 };
 
 export default Hero;
+
+// //function declearation
+// function checkObi() {
+//   let obi = true;
+
+//   return obi;
+// }
+
+// //function expression
+// const checkobi2 = function () {
+
+// }
+
+// //arrow function
+// const checkObi3 = () => {
+
+// }
+
+// let valueObi = checkObi();
+
+// const a = 2;
+
+// a = 3;
+
+// console.log(a);

@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     // <nav className="fixed top-0 left-0 w-full p-5 flex items-start justify-between max-w-7xl mx-auto z-20 xl:items-center">
     // <nav className="fixed top-0 left-0 w-[78%] p-5 flex items-start justify-between mx-[13rem] z-50 xl:items-center backdrop-blur-md ">
-    <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 w-[78%] px-5 py-5 flex items-center justify-between z-50 backdrop-blur-md">
+    <nav className="fixed top-0 left-1/2 transform -translate-x-1/2 w-[100%] px-[16rem] py-5 flex items-center justify-between z-50 backdrop-blur-sm bg-transparent">
       {/* LEFT SIDE SOCIALS */}
       <motion.div
         className="flex flex-row items-center"

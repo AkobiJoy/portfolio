@@ -22,6 +22,7 @@ import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
 import TeamSection from "@/components/Team";
 import Footer from "@/components/Footer";
+import SkillPage from "@/components/Check";
 
 const page = () => {
   return (
@@ -75,21 +76,12 @@ const page = () => {
           <SkillReact />
           <SkillReact />
           <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
-          <SkillReact />
+
         </div>
+      </section>
+
+      <section id="" className="snap-center">
+        <SkillPage />
       </section>
 
       <section id="project" className="snap-center">

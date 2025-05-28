@@ -408,10 +408,10 @@ const Contact = () => {
         </div>
 
         {/* Contact Info Section */}
-        <div className="bg-gray-900 text-white p-10 flex flex-col justify-between">
+        <div className="bg-white dark:bg-neutral-900 text-white p-10 flex flex-col justify-between">
           <div>
-            <h3 className="text-xl font-bold mb-3">Phone & WhatsApp</h3>
-            <p className="mb-2">📞 +234 905 655 6827</p>
+            <h3 className="text-xl font-bold mb-3 text-black dark:text-white">Phone & WhatsApp</h3>
+            <p className="mb-2 text-black dark:text-white">📞 +234 905 655 6827</p>
             <a
               href="https://wa.me/2349020068522"
               target="_blank"
@@ -487,8 +487,12 @@ const Contact = () => {
           </div>
 
           <div className="mt-10">
-            <h3 className="text-xl font-bold mb-3">Email</h3>
-            <p>📧 joyeugene3@gmail.com</p>
+            <h3 className="text-xl font-bold mb-3 text-black dark:text-white">
+              Email
+            </h3>
+            <p className="text-black dark:text-white">
+              📧 joyeugene3@gmail.com
+            </p>
           </div>
         </div>
       </div>
