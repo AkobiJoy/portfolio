@@ -336,7 +336,7 @@ const Contact = () => {
 
   return (
     <section
-      className="py-[13rem] text-gray-900 pt-20 px-6 md:px-20"
+      className="py-[8rem] text-gray-900 pt-20 px-6 md:px-20"
       id="contact"
     >
       <h1 className=" buttom-20 uppercase tracking-[20px] text-gray-500 text-4xl text-center mb-16 font-bold">

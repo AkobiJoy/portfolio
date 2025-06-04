@@ -20,9 +20,7 @@ import SkillVscode from "@/components/SkillVcode";
 import SkillReact from "@/components/SkillReact";
 import Projects from "@/components/Projects";
 import Contact from "@/components/Contact";
-import TeamSection from "@/components/Team";
 import Footer from "@/components/Footer";
-import SkillPage from "@/components/Check";
 
 const page = () => {
   return (
@@ -38,7 +36,7 @@ const page = () => {
         <Hero />
       </section>
 
-      <section id="about" className="snap-center py-16 lg:py-0 ">
+      <section id="about" className="snap-center py-16 lg:py-20 lg:pt-[10rem] ">
         <About />
       </section>
 
@@ -51,7 +49,8 @@ const page = () => {
       {/* <section id='skills' className='snap-start  h-screen items-center px-[1rem] flex flex-col pt-32'> */}
       <section
         id="skills"
-        className="snap-center py-16 lg:py-0 px-[1rem] items-center flex flex-col h-[80vh] mt-[12rem] lg:mt-0 lg:mb-7"
+        className="snap-center py-16 px-[1rem] items-center flex flex-col h-[89.8vh] mt-[12rem] lg:mt-0 lg:mb-7
+        lg:py-0 lg:pt-[12rem]"
       >
         {/* <h3 className='uppercase tracking-[20px] text-gray-500 text-base md:text-2xl '>Skills</h3> */}
         <h1 className="bottom-28 uppercase tracking-[20px] text-gray-500 text-4xl text-center mb-[7rem] font-bold">
@@ -76,24 +75,24 @@ const page = () => {
           <SkillReact />
           <SkillReact />
           <SkillReact />
-
         </div>
       </section>
 
-      <section id="" className="snap-center">
-        <SkillPage />
-      </section>
-
-      <section id="project" className="snap-center">
+      <section
+        id="project"
+        className="snap-center 
+       lg:py-20 lg:pt-[5rem]
+      "
+      >
         <Projects />
       </section>
 
-      {/* 
-      <section id="team" className="snap-center">
-        <TeamSection />
-      </section> */}
-
-      <section id="contact" className="snap-center">
+      <section
+        id="contact"
+        className="snap-center
+       lg:py-0 lg:pt-[5rem]
+      "
+      >
         <Contact />{" "}
       </section>
 
