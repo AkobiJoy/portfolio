@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import { IoLogoHtml5 } from "react-icons/io";
@@ -8,13 +7,14 @@ import { FaReact } from "react-icons/fa";
 import { RiNextjsFill } from "react-icons/ri";
 import { SiMongodb } from "react-icons/si";
 
-
 const ExperienceCard = ({ experience }) => {
   const { title, company, startDate, skills, description, image } = experience;
 
   return (
-    <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-[300px] md:w-[400px] snap-center bg-[#292929] 
-      py-12 mt-32 md:mt-[1rem] lg:mt-0 dark:hover:opacity-100 dark:opacity-40 cursor-pointer transition-opacity  duration-500 ease-in-out overflow-hidden">
+    <article
+      className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-[300px] md:w-[400px] snap-center bg-[#292929] 
+      py-12 mt-32 md:mt-[1rem] lg:mt-0 dark:hover:opacity-100 dark:opacity-40 cursor-pointer transition-opacity  duration-500 ease-in-out overflow-hidden"
+    >
       <motion.img
         initial={{
           y: -100,
@@ -29,8 +29,12 @@ const ExperienceCard = ({ experience }) => {
       />
 
       <div className="px-6 md:px-10">
-        <h4 className="text-sm md:text-base font-light text-gray-300">{title}</h4>
-        <p className="font-bold text-sm md:text-base mt-1 text-gray-100">{company}</p>
+        <h4 className="text-sm md:text-base font-light text-gray-300">
+          {title}
+        </h4>
+        <p className="font-bold text-sm md:text-base mt-1 text-gray-100">
+          {company}
+        </p>
 
         <div className="flex space-x-2 my-2">
           {skills.map((Skill, index) => (
@@ -38,7 +42,9 @@ const ExperienceCard = ({ experience }) => {
           ))}
         </div>
 
-        <p className="uppercase text-sm py-2 text-gray-400">Started: {startDate}</p>
+        <p className="uppercase text-sm py-2 text-gray-400">
+          Started: {startDate}
+        </p>
 
         <ul className="list-disc space-y-1 ml-4 text-sm text-left text-gray-300">
           {description.map((task, index) => (
@@ -52,10 +58,6 @@ const ExperienceCard = ({ experience }) => {
 
 export default ExperienceCard;
 
-
-
-
-
 // import React from "react";
 // import { motion } from "framer-motion";
 // import { IoLogoHtml5 } from "react-icons/io";
@@ -67,7 +69,7 @@ export default ExperienceCard;
 
 // const ExperienceCard = () => {
 //   return (
-//     <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-[300px] md:w-[400px] snap-center bg-[#292929] 
+//     <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-[300px] md:w-[400px] snap-center bg-[#292929]
 //     py-12 mt-32 md:mt-[1rem] hover:opacity-100 opacity-40 cursor-pointer transition-opacity  duration-500 ease-in-out overflow-hidden">
 
 // {/* <article className="flex flex-col rounded-lg items-center space-y-4 flex-shrink-0 w-[300px] md:w-[400px] snap-center bg-[#292929]
@@ -114,8 +116,3 @@ export default ExperienceCard;
 // };
 
 // export default ExperienceCard;
-
-
-
-
-

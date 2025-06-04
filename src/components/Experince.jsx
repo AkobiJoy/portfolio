@@ -1,4 +1,3 @@
-
 "use client";
 import React from "react";
 import { motion } from "motion/react";
@@ -19,11 +18,11 @@ const experienceData = [
     title: "Front-End Developer",
     company: "Flexspacez",
     startDate: "January 29th, 2025",
-    skills: [IoLogoHtml5, IoLogoCss3, FaJsSquare,FaPhp, FaBootstrap],
+    skills: [IoLogoHtml5, IoLogoCss3, FaJsSquare, FaPhp, FaBootstrap],
     description: [
       "Built all UI designs",
       "Implemented responsiveness",
-      "Designed and developed user interface"
+      "Designed and developed user interface",
     ],
     image: "/about.png",
   },
@@ -31,11 +30,18 @@ const experienceData = [
     title: "Front-end Developer Intern",
     company: "Egoras Tech",
     startDate: "May 1st, 2023",
-    skills: [IoLogoHtml5, FaReact, RiTailwindCssFill, TbBrandVite, TbBrandRedux],
-    description: [,
+    skills: [
+      IoLogoHtml5,
+      FaReact,
+      RiTailwindCssFill,
+      TbBrandVite,
+      TbBrandRedux,
+    ],
+    description: [
+      ,
       "Consumed APIs",
       "Integrated Redux",
-      "Built Responsive Uis"
+      "Built Responsive Uis",
     ],
     image: "/about.png",
   },
@@ -47,7 +53,7 @@ const experienceData = [
     description: [
       "Developed both front-end and back-end",
       "Worked with cloud services",
-      "Built RESTful APIs"
+      "Built RESTful APIs",
     ],
     image: "/about.png",
   },
@@ -59,7 +65,7 @@ const experienceData = [
     description: [
       "Designed user interfaces",
       "Created wireframes and prototypes",
-      "Conducted user research"
+      "Conducted user research",
     ],
     image: "/about.png",
   },
@@ -98,20 +104,6 @@ const Experience = () => {
 };
 
 export default Experience;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // "use client";
 // import React from "react";
@@ -161,14 +153,10 @@ export default Experience;
 
 // export default Experince;
 
-
-
 // "use client";
 // import React from "react";
 // import { motion } from "motion/react";
 // import ExperienceCard from "./ExperinceCard";
-
-
 
 // const Experience = () => {
 //   return (
@@ -207,6 +195,3 @@ export default Experience;
 // };
 
 // export default Experience;
-
-
-
